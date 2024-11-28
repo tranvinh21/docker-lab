@@ -1,9 +1,19 @@
-# My Learning Journey 🚀
+### Refactoring Docker Knowledge
 
-Welcome to my knowledge repository! This collection is a record of my learningjourney, covering topics, skills, and insights I’ve gained over time. Here, you’ll find a variety of subjects I’ve explored, including technologies, programming concepts, and other areas that have expanded my understanding and expertise.
+I'm currently refactoring my knowledge about Docker. Although I learned Docker
+in the past, my understanding was quite basic. It mainly revolved around:
 
-### Purpose 🎯
+- What is Docker, image, container, Dockerfile, docker-compose, etc.?
+- How to deploy Docker on production?
+- How to integrate CI/CD with Docker?
 
-The aim of this repository is to document and organize everything I’ve learned in one place, making it easy to revisit and build upon as I grow. By tracking each topic, I can see my progress and reflect on my development path over time. This repository will also serve as a resource for others who may be interested in similar topics or looking for inspiration.
+These are the kind of things I learned and applied in my work. However, now I
+want to delve deeper into DevOps, specifically exploring technologies like
+Kubernetes (k8s), Amazon Elastic Container Service for Kubernetes (eks), Amazon
+Elastic Container Service (ecs), and many other areas I'm not familiar with. For
+now, I'm focusing on learning Kubernetes first.
 
-![Alt text](./static/images/learning-journey.avif)
+Upon starting this journey, I've realized that my Docker knowledge is
+insufficient, and it's causing me a lot of problems. Therefore, today I want to
+re-learn Docker in more detail, gaining a deeper understanding of "What is
+Docker"?
