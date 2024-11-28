@@ -17,3 +17,4 @@ Upon starting this journey, I've realized that my Docker knowledge is
 insufficient, and it's causing me a lot of problems. Therefore, today I want to
 re-learn Docker in more detail, gaining a deeper understanding of "What is
 Docker"?
+[](https://cloud.z.com/vn/wp-content/uploads/2023/02/image1-15.png)
