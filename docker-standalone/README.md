@@ -166,8 +166,6 @@ Use cases Diverse o/s isolation legacy
 
 ### Docker in CI/CD
 
-f
-
 ### Additional Knowledge (metioned above)
 
 ### The underlying technology
