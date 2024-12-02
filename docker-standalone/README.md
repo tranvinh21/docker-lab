@@ -32,7 +32,8 @@
   the same system, or you can connect a Docker client to a remote Docker daemon.
   The Docker client and daemon communicate using a RESTAPI, over UNIX sockets or
   a network interface. Another Docker client is Docker Compose, that lets you
-  work with applications consisting of an set of container
+  work with applications consisting of an set of container.
+
   ![Docker architecture](https://docs.docker.com/get-started/images/docker-architecture.webp)
 
 ### What is Docker deamon (dockerd)?
@@ -87,7 +88,7 @@
 
 Volumes are a mechanism for storing data outside containers. All volumes are
 managed by Docker and stored in a dedicated directory on your host, usually
-`/var/lib/docker/volumes for Linux systems`.
+`/var/lib/docker/volumes` for Linux systems.
 
 For more detail, when you mount a directory from your host machine to a
 container using Docker, the container and the host share the **same physical**
@@ -116,11 +117,56 @@ deleted or recreated.
 
 ### Docker network
 
+- Overview
+
+  Container networking refers to the ability for container to connect to and
+  communicate with each other, or to non-Docker workloads
+
+- Drivers
+
+  - Bridge : The default network driver. Uses a software bridge which lets
+    containers connected to the same bridge network communicate, while providing
+    isolatation from containers that aren't connected to that bridge network.
+    The Docker bridge driver automatically installs rules in the host machine so
+    that containers on different bridge networks can't communicate directly with
+    each other. When you start Docker, a `default bridge network` (bridge) is
+    created automatically, and newly-started containers connect to it unless
+    otherwise specified. You can also create user-defined bridge networks are
+    superior to the default bridge network **Diferences between user-difined
+    bridges and the default bridge**
+    - User-defined bridges provide automatic DNS resolution between containers.
+    - User-defined bridges provide better isolation.
+    - Containers can be attached and detached from user-defined networks on the
+      fly.
+    - Each user-defined network creates a configurable bridge.
+    - Linked containers on the defualt bridge network share environment
+      variables.
+
+  - Host: Remove network isolation between the container and the Docker host.
+    That container's network stack isn't isolated from the Docker host (the
+    container shares the host's networking namspace), and the container doesn't
+    get its own IP-address allocated. **Use cases** To optimize performance. In
+    situations where a container needs to handle a large range of ports.
+
+  - none: Completely isolate a container from the host and other containers.
+  - overlay: Overlay networks connect multiples Docker deamons together/
+  - ipvlan: IPvlan networks provide full control over both IPv4 and IPv6
+    addressing.
+  - macvlan: Assign a MAC address to a container.
+
 ### Virtual Machine vs Docker ?
 
-### Docker cheetsheet
+1.Docker Docker engine Host kernel Cgroup
+
+Use cases micro-services rapid development resource effection
+
+2. VM types virtual h/w guest o/s
+
+Use cases Diverse o/s isolation legacy
 
 ### Docker in CI/CD
+
+f
 
 ### Additional Knowledge (metioned above)
 
